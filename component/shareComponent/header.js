@@ -26,18 +26,23 @@ export default class Header extends Component{
                             <TouchableOpacity onPress={() => this.props.nav.toggleDrawer()} >
                                 <Image
                                     source={{uri:'https://ebace.aero/wp-content/themes/EBACE2016/assets/hamburger.png'}}
-                                    style={{ width: 30, height: 30}}
+                                    style={{ width: 50, height: 50}}
                                 />
                             </TouchableOpacity>
                         </View>
                         <View style={style.title}>
                             <Text style={{color: 'white'}}>AawBSpot</Text>
                         </View>
+                        <View style={style.f1center}>
+                            <TouchableOpacity onPress={() => this.props.nav.navigate('MyModal')} >
+                            <Text style={{color:'white'}}>Sign in</Text>
+                            </TouchableOpacity>
+                        </View>
                         <View style={style.rightIcon}>
                             <TouchableOpacity onPress={() => this.props.nav.toggleDrawer()} >
                                 <Image
                                     source={{uri:'https://www.skylinetechnologies.com/SkylineTechnologies/media/DesignAssets/MiscIcons/Shopping-Cart-Icon2.png'}}
-                                    style={{ width: 30, height: 30}}
+                                    style={{ width: 50, height: 50}}
                                 />
                             </TouchableOpacity>
                         </View>
@@ -60,15 +65,32 @@ export default class Header extends Component{
                             placeholder={'search....'}
                             onFocus={() => this.props.nav.navigate('search')}
                         />
-                        <Picker
-                            selectedValue={this.state.selectValue}
-                            style={{height: 30, width: 83,color:'black'}}
-                            onValueChange={(itemValue, itemIndex) =>
-                                this.setState({selectValue: itemValue})
-                            }>
-                            <Picker.Item label="All" value="All"/>
-                            <Picker.Item label="Coustom" value="Coustom" />
-                        </Picker>
+                        {/*<Picker*/}
+                            {/*selectedValue={this.state.selectValue}*/}
+                            {/*style={{height: 30, width: 83,color:'black'}}*/}
+                            {/*onValueChange={(itemValue, itemIndex) =>*/}
+                                {/*this.setState({selectValue: itemValue})*/}
+                            {/*}>*/}
+                            {/*<Picker.Item label="All" value="All"/>*/}
+                            {/*<Picker.Item label="Coustom" value="Coustom" />*/}
+                        {/*</Picker>*/}
+                    </View>
+                </View>
+                <View style={(style.contRow)}>
+                    <Text style={{color:'white',fontSize:10}}> Shop by </Text>
+                </View>
+                <View style={(style.contRow2)}>
+                    <View style={style.title}>
+                        <Text style={{color:'white',fontSize:16}}> Category </Text>
+                    </View>
+                    <View style={style.title}>
+                        <Text style={{color:'white',fontSize:16}}> Wish List </Text>
+                    </View>
+                    <View style={style.title}>
+                        <Text style={{color:'white',fontSize:16}}> Deals </Text>
+                    </View>
+                    <View style={style.title}>
+                        <Text style={{color:'white',fontSize:16}}> Sell </Text>
                     </View>
                 </View>
             </View>
@@ -151,5 +173,11 @@ const style = StyleSheet.create({
         borderBottomRightRadius:5,
         borderTopRightRadius:5,
         backgroundColor: 'orange',paddingLeft: 5,paddingRight: 5
+    },
+    f1center: {
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems:'center'
     }
 });

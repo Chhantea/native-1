@@ -1,16 +1,23 @@
 import React,{Component} from 'react';
-import {View,Button,Text} from 'react-native';
+import {View,Button,Text,TextInput} from 'react-native';
+import SignUp from "../../Credential/signup";
 
 export default class ModalScreen extends Component {
+    constructor(){
+        super();
+        this.state={
+            mailorphone:'',
+            password:''
+        }
+    }
+    onHandleChange=(e)=>{
+      this.setState({[e.target.name]:e.target.value})
+    };
     render() {
         return (
-            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Text style={{ fontSize: 30 }}>This is a modal!</Text>
-                <Button
-                    onPress={() => this.props.navigation.goBack()}
-                    title="Dismiss"
-                />
-            </View>
+            <SignUp
+            nav={this.props.navigation}
+            />
         );
     }
 }

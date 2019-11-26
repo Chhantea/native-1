@@ -1,14 +1,29 @@
 import React,{Component} from 'react';
 import {StyleSheet,Text,View,Button,TouchableOpacity,Image} from 'react-native';
 import Header from '.././shareComponent/header';
+import axios from 'axios';
+import Url from '../../config/api_url'
+
+//if there is params
 
 export default class Another extends Component {
+
     constructor(props){
         super(props);
         this.state ={
-
+           navigation: this.props
         }
     }
+
+    componentDidMount(){
+        var config = {
+            headers: {'Access-Control-Allow-Origin': '*'}
+        };
+        axios.get(Url+"/user/5d96e161c282ce0403f8ae6e/profile",config).then(res=>{
+            console.log("chk this ----->",res.data);
+        })
+    }
+
     static navigationOptions = ({navigation})=> ({
         // header: <Header/>,
         // headerStyle: {
@@ -34,7 +49,7 @@ export default class Another extends Component {
         ),
     });
 	render(){
-        const { navigation } = this.props;
+        const { navigation } = this.state.navigation;
         const itemId = navigation.getParam('itemId', 'NO-ID');
         const otherParam = navigation.getParam('otherParam', 'some default value');
 		return(

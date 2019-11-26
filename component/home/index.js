@@ -43,8 +43,7 @@ export default class HomeIndex extends Component {
                     <View style={styles.container}>
                   <Text
                     style={styles.welcome}
-                   New Code
-                      onPress={()=>this.props.navigation.navigate('Another')}
+                      onPress={()=>this.props.navigation.navigate('Another',{name:"this is params"})}
                   >
                     Home Screen is this
                   </Text>
