@@ -7,12 +7,14 @@ import ModalScreen from './component/shareComponent/modal/ModalScreen';
 import { Ionicons } from '@expo/vector-icons';
 import Sidebar from './component/sideBar';
 import Search from './component/Search/index';
-import Menu from './component/Menu'
+import Menu from './component/Menu';
+import Cart from './component/screens/cart/Index';
 
 const MainNavigator = createStackNavigator(
     {
         Home: HomeScreen,
         Another:  Another,
+        Cart: Cart,
         search: Search
     },
     {

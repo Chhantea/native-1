@@ -1,6 +1,5 @@
 import React,{ Component } from 'react';
 import {StyleSheet,Text,View,TouchableOpacity,Image,TextInput,Picker} from 'react-native';
-// import Icon from 'react-native-vector-icons/FontAwesome5';
 import { Ionicons } from '@expo/vector-icons';
 
 export default class Header extends Component{
@@ -39,7 +38,7 @@ export default class Header extends Component{
                             </TouchableOpacity>
                         </View>
                         <View style={style.rightIcon}>
-                            <TouchableOpacity onPress={() => this.props.nav.toggleDrawer()} >
+                            <TouchableOpacity onPress={() => this.props.nav.navigate('Cart')} >
                                 <Image
                                     source={{uri:'https://www.skylinetechnologies.com/SkylineTechnologies/media/DesignAssets/MiscIcons/Shopping-Cart-Icon2.png'}}
                                     style={{ width: 50, height: 50}}

@@ -1,11 +1,16 @@
 import React,{Component} from 'react';
 import {StyleSheet,Text,View,Button,ScrollView,Picker,TouchableOpacity,Image} from 'react-native';
 import  Header from '.././shareComponent/header';
+import CarousalHeadder from "../shareComponent/carousal/CarousalHeadder";
+import GetLocation from "../shareComponent/GetLocation";
+import SideScrollSection from "../shareComponent/carousal/SideScrollSection";
 
 export default class HomeIndex extends Component {
   constructor(props){
       super(props);
-      this.state={}
+      this.state={
+          locationCheck:false
+      }
   }
     static navigationOptions =({navigation})=> ({
         header: <Header
@@ -35,46 +40,58 @@ export default class HomeIndex extends Component {
     });
 	render(){
 		return(
-		    <View >
-                {/*<Header*/}
-                {/*nav = {this.props.navigation}*/}
-                {/*/>*/}
-                <ScrollView >
-                    <View style={styles.container}>
-                  <Text
-                    style={styles.welcome}
-                      onPress={()=>this.props.navigation.navigate('Another',{name:"this is params"})}
-                  >
-                    Home Screen is this
-                  </Text>
-                    <Button
-                        title="Go to Details"
-                        onPress={() => {
-                            /* 1. Navigate to the Details route with params */
-                            this.props.navigation.navigate('Another', {
-                                itemId: 86,
-                                otherParam: 'anything you want here',
-                            });
-                        }}
-                    />
-                    <Button
-                    title="drwaer"
-                    onPress={()=>this.props.navigation.toggleDrawer()}
-                    />
-                        <Button
-                            title="drwaer"
-                            onPress={()=>this.props.navigation.toggleDrawer()}
-                        />
+		    <View style={styles.main}>
+                <ScrollView
+                    showsVerticalScrollIndicator={false}
+                >
+                    <View style={styles.carousalHeaderSection}>
+                        <CarousalHeadder/>
                     </View>
-                    <Picker
-                        selectedValue={this.state.language}
-                        style={{height: 40, width: 100}}
-                        onValueChange={(itemValue, itemIndex) =>
-                            this.setState({language: itemValue})
-                        }>
-                        <Picker.Item label="Java" value="java" />
-                        <Picker.Item label="JavaScript" value="js" />
-                    </Picker>
+
+                    {/*<Picker*/}
+                        {/*selectedValue={this.state.language}*/}
+                        {/*style={{height: 40, width: 100}}*/}
+                        {/*onValueChange={(itemValue, itemIndex) =>*/}
+                            {/*this.setState({language: itemValue})*/}
+                        {/*}>*/}
+                        {/*<Picker.Item label="Java" value="java" />*/}
+                        {/*<Picker.Item label="JavaScript" value="js" />*/}
+                    {/*</Picker>*/}
+                    <View style={styles.section2}>
+                        <View>
+                            <Text>
+                                New Arrival
+                            </Text>
+                        </View>
+                        <View
+                            style={{
+                                borderBottomColor: '#0000001a',
+                                borderBottomWidth: 1,
+                                padding:5
+                            }}
+                        />
+                        <SideScrollSection/>
+                    </View>
+                    <View style={styles.section2}>
+                        <View>
+                            <Text>
+                                New Arrival
+                            </Text>
+                        </View>
+                        <View
+                            style={{
+                                borderBottomColor: '#0000001a',
+                                borderBottomWidth: 1,
+                                padding:5
+                            }}
+                        />
+                        <SideScrollSection/>
+                    </View>
+                    <Button
+                    title={"Get location"}
+                    onPress={()=>this.setState({locationCheck:true})}
+                    />
+                    {this.state.locationCheck? <GetLocation/>:null}
                  </ScrollView>
             </View>
 			)
@@ -83,7 +100,7 @@ export default class HomeIndex extends Component {
 
 const styles = StyleSheet.create({
     main: {
-
+        backgroundColor:'grey'
     },
   container: {
     flex: 1,
@@ -97,4 +114,12 @@ const styles = StyleSheet.create({
     margin: 10,
     color: '#ffffff',
   },
+    section2:{
+        marginBottom:5,
+        backgroundColor:"white",
+        padding:5
+    },
+    carousalHeaderSection:{
+        marginBottom:5
+    }
 });

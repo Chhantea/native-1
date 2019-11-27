@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import {View,Text,Button,TouchableOpacity,StyleSheet,ScrollView,Image} from 'react-native';
-import { Avatar, Badge, Icon, withBadge } from 'react-native-elements';
-import { Ionicons } from '@expo/vector-icons';
-import NavButton from '../shareComponent/NavButton';
+// import { Avatar, Badge, Icon, withBadge } from 'react-native-elements';
+// import { Ionicons } from '@expo/vector-icons';
+// import NavButton from '../shareComponent/NavButton';
 import SearchHeader from '../shareComponent/searchHeader';
 
 

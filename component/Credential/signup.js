@@ -18,13 +18,24 @@ export default class SignUp extends React.Component {
         return (
             <View style={styles.container}>
                 <View >
+                    <View style={styles.contentCenter}>
                     <Text>Log in to your account</Text>
+                    </View>
                     <View>
                         <TextInput
                             style={styles.input}
                             placeholder={"Email or phone"}
                             selectionColor={Blue}
                             underlineColorAndroid={Grey}
+                        />
+                    </View>
+                    <View>
+                        <TextInput
+                            style={styles.input}
+                            placeholder={"Password"}
+                            selectionColor={Blue}
+                            underlineColorAndroid={Grey}
+                            secureTextEntry={true}
                         />
                     </View>
                     <Button
@@ -43,9 +54,16 @@ const styles = StyleSheet.create({
        paddingLeft: 6
     },
     container: {
+        // flex:1,
         justifyContent: 'center',
         marginTop: 80,
         padding: 20
+    },
+    contentCenter:{
+        flex:1,
+        justifyContent:'center',
+        alignItems:'center',
+        marginBottom:20
     }
 
 })
