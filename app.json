@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "Aawb App",
-    "slug": "Rnative",
+    "name": "AawbSpot",
+    "description": "This is a demo app",
+    "slug": "AawbSpot",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
@@ -9,11 +10,11 @@
       "android",
       "web"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/brand1.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/Coloured.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -25,6 +26,9 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.aawbInternetLtd.aawbapp"
     }
   }
 }

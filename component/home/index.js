@@ -57,6 +57,10 @@ export default class HomeIndex extends Component {
                         {/*<Picker.Item label="Java" value="java" />*/}
                         {/*<Picker.Item label="JavaScript" value="js" />*/}
                     {/*</Picker>*/}
+                    <Image
+                        source={{isStatic:true,uri:'file://../../assets/brand1.png'}}
+                        style={{ width: 150, height: 150}}
+                    />
                     <View style={styles.section2}>
                         <View>
                             <Text>
@@ -70,7 +74,9 @@ export default class HomeIndex extends Component {
                                 padding:5
                             }}
                         />
-                        <SideScrollSection/>
+                        <SideScrollSection
+                        nav={this.props.navigation}
+                        />
                     </View>
                     <View style={styles.section2}>
                         <View>
@@ -85,8 +91,14 @@ export default class HomeIndex extends Component {
                                 padding:5
                             }}
                         />
-                        <SideScrollSection/>
+                        <SideScrollSection
+                            nav={this.props.navigation}
+                        />
                     </View>
+                    {/*<Button*/}
+                    {/*title={"test"}*/}
+                    {/*onPress={()=>this.props.navigation.navigate('Cart')}*/}
+                    {/*/>*/}
                     <Button
                     title={"Get location"}
                     onPress={()=>this.setState({locationCheck:true})}

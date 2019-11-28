@@ -29,12 +29,14 @@ export default class Header extends Component{
                                 />
                             </TouchableOpacity>
                         </View>
-                        <View style={style.title}>
-                            <Text style={{color: 'white'}}>AawBSpot</Text>
-                        </View>
+                            <View style={style.title}>
+                                <TouchableOpacity onPress={() => this.props.nav.navigate('Home')}>
+                                <Text style={{color: 'white'}}>AawBSpot</Text>
+                                </TouchableOpacity>
+                            </View>
                         <View style={style.f1center}>
                             <TouchableOpacity onPress={() => this.props.nav.navigate('MyModal')} >
-                            <Text style={{color:'white'}}>Sign in</Text>
+                            <Text style={{color:'white'}}>Login</Text>
                             </TouchableOpacity>
                         </View>
                         <View style={style.rightIcon}>

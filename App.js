@@ -9,13 +9,15 @@ import Sidebar from './component/sideBar';
 import Search from './component/Search/index';
 import Menu from './component/Menu';
 import Cart from './component/screens/cart/Index';
+import SearchResult from "./component/screens/searchResult/SearchResultIndex";
 
 const MainNavigator = createStackNavigator(
     {
         Home: HomeScreen,
         Another:  Another,
         Cart: Cart,
-        search: Search
+        search: Search,
+        searchResult: SearchResult
     },
     {
         initialRouteName: 'Home',
@@ -61,7 +63,6 @@ const MyDrawerNavigator = createDrawerNavigator({
 },{
     contentComponent: Sidebar
 });
-
 const App = createAppContainer(MyDrawerNavigator);
 
 export default App;

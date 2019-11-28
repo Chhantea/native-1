@@ -3,7 +3,7 @@ import Carousel from 'react-native-banner-carousel';
 import { StyleSheet, Image, View, Dimensions } from 'react-native';
 
 const BannerWidth = Dimensions.get('window').width;
-const BannerHeight = 120;
+const BannerHeight = 140;
 
 const images = [
     "https://previews.123rf.com/images/mikalaimanyshau/mikalaimanyshau1601/mikalaimanyshau160100083/50304057-colourful-shopping-vector-flat-banner-for-your-business-web-sites-etc-quality-design-illustrations-e.jpg",

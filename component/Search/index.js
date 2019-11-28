@@ -8,9 +8,15 @@ import SearchHeader from '../shareComponent/searchHeader';
 
 export default class Search extends Component{
     static navigationOptions =({navigation})=> ({
-        headerTitle: <View style={style.searchContainer}>
-            <SearchHeader/>
-        </View>,
+        // headerTitle: <View style={style.searchContainer}>
+        //     <SearchHeader
+        //     />
+        // </View>,
+        header: <SearchHeader
+            nav={navigation}/>,
+        headerStyle: {
+            backgroundColor: "transparent"
+        }
 
     });
     render(){
@@ -21,7 +27,7 @@ export default class Search extends Component{
                 <ScrollView contentContainerStyle={{flexGrow: 1}}
                             keyboardShouldPersistTaps='handled'
                 >
-                <Text>This is search</Text>
+                {/*<Text>This is search</Text>*/}
                 </ScrollView>
             </View>
         )

@@ -38,7 +38,7 @@ export default class SideBar extends Component{
                         </TouchableOpacity>
                         <TouchableOpacity
                             style = {styles.container}
-                            onPress = {() => this.props.navigation.navigate('MyModal')}>
+                            onPress = {() => this.props.navigation.navigate('Cart')}>
                             <View style={styles.div1}>
                                 <Ionicons  name="ios-cart" size={30} color="grey" />
                             </View>

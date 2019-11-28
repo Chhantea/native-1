@@ -29,7 +29,9 @@ export default class SideScrollSection extends Component{
                         <View style={styles.subSection}>
                             <Text style={{fontSize:10}}>Predator Triton 900 17.3” Intel® Core™ i7 RTX 2080 2 in 1 Gaming Laptop - 1 TB SSD</Text>
                         </View>
-                        <Button title="Details"/>
+                        <Button title="Details"
+                        onPress={()=>this.props.nav.navigate('searchResult')}
+                        />
                 </Card>
             </View>
                 <View>
