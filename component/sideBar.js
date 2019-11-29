@@ -9,7 +9,6 @@ export default class SideBar extends Component{
        console.log("this is press")
     }
     render() {
-        console.log("active?",this.props.activeItemKey);
         return (
             <View style={styles.mainContainer}>
                     <ScrollView>
@@ -60,6 +59,21 @@ export default class SideBar extends Component{
                             <View style={styles.divCenter}>
                                 <Text style = {styles.text}>
                                     Filter
+                                </Text>
+                            </View>
+                            <View style={styles.div1}>
+                                <Badge value="5" status="success" />
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style = {styles.container}
+                            onPress = {() => this.props.navigation.navigate('userSetting')}>
+                            <View style={styles.div1}>
+                                <Ionicons  name="md-settings" size={30} color="grey" />
+                            </View>
+                            <View style={styles.divCenter}>
+                                <Text style = {styles.text}>
+                                    Setting
                                 </Text>
                             </View>
                             <View style={styles.div1}>

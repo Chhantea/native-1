@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {View,Text,Image,StyleSheet,TouchableOpacity} from 'react-native';
+import {View,Text,Image,StyleSheet,TouchableOpacity,ActivityIndicator} from 'react-native';
 
 export default class ResultList extends Component{
 
@@ -15,6 +15,7 @@ export default class ResultList extends Component{
                     <Image
                         style={styles.image}
                         source={{uri:'https://i.ebayimg.com/images/g/j7wAAOSwOGFc0e~W/s-l640.jpg'}}
+                        PlaceholderContent={<ActivityIndicator />}
                     />
                 </View>
                     <View style={styles.itemTitle}>

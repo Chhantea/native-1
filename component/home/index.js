@@ -57,10 +57,6 @@ export default class HomeIndex extends Component {
                         {/*<Picker.Item label="Java" value="java" />*/}
                         {/*<Picker.Item label="JavaScript" value="js" />*/}
                     {/*</Picker>*/}
-                    <Image
-                        source={{isStatic:true,uri:'file://../../assets/brand1.png'}}
-                        style={{ width: 150, height: 150}}
-                    />
                     <View style={styles.section2}>
                         <View>
                             <Text>

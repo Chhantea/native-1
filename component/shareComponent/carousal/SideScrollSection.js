@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
-import {View,Text,StyleSheet,Image,ScrollView}from 'react-native';
-import { Card, ListItem, Button, Icon } from 'react-native-elements'
+import {View,Text,StyleSheet,ScrollView,ActivityIndicator}from 'react-native';
+import { Card, ListItem, Button, Icon,Image } from 'react-native-elements'
 
 const users =
     {
@@ -24,6 +24,7 @@ export default class SideScrollSection extends Component{
                                         style={styles.image}
                                         resizeMode="cover"
                                         source={{ uri: "https://brain-images-ssl.cdn.dixons.com/3/4/10194243/u_10194243.jpg" }}
+                                        PlaceholderContent={<ActivityIndicator />}
                                     />
                                 </View>
                         <View style={styles.subSection}>
@@ -43,6 +44,7 @@ export default class SideScrollSection extends Component{
                                 style={styles.image}
                                 resizeMode="cover"
                                 source={{ uri: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-pro-max-gold-select-2019?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1566953859132" }}
+                                PlaceholderContent={<ActivityIndicator />}
                             />
                         </View>
                         <View style={styles.subSection}>
@@ -61,6 +63,7 @@ export default class SideScrollSection extends Component{
                                 style={styles.image}
                                 resizeMode="cover"
                                 source={{ uri: "https://www.little-phoenix.com/218-large_default/barrette-memoire-4go-ram-ddr3-samsung-m471b5273dh0-ch9-so-dimm-pc3-10600-1333mhz-2rx8.jpg" }}
+                                PlaceholderContent={<ActivityIndicator />}
                             />
                         </View>
                         <View style={styles.subSection}>
@@ -79,6 +82,7 @@ export default class SideScrollSection extends Component{
                                 style={styles.image}
                                 resizeMode="cover"
                                 source={{ uri: "https://www.quietpc.com/images/products/asus-z390-f-3d-large.jpg" }}
+                                PlaceholderContent={<ActivityIndicator />}
                             />
                         </View>
                         <View style={styles.subSection}>

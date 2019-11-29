@@ -31,7 +31,10 @@ export default class Header2 extends Component{
                     </View>
                     <View style={style.title}>
                         <TouchableOpacity onPress={() => this.props.nav.navigate('Home')}>
-                            <Text style={{color: 'white'}}>AawBSpot</Text>
+                            <Image
+                                source={require('./../../assets/White.png')}
+                                style={{ width: 40, height: 40}}
+                            />
                         </TouchableOpacity>
                     </View>
                     <View style={style.f1center}>

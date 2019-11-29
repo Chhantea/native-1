@@ -27,6 +27,7 @@ export default class Index extends Component{
                         <CartList/>
                     </View>
                 </ScrollView>
+                <View style={{marginBottom:60}}/>
                     <View style={styles.bottomView}>
                         <Button
                             title={"Proceed to Buy"}

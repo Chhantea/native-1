@@ -10,14 +10,15 @@ import Search from './component/Search/index';
 import Menu from './component/Menu';
 import Cart from './component/screens/cart/Index';
 import SearchResult from "./component/screens/searchResult/SearchResultIndex";
-
+import UserSettings from "./component/screens/user/UserSettings";
 const MainNavigator = createStackNavigator(
     {
         Home: HomeScreen,
         Another:  Another,
         Cart: Cart,
         search: Search,
-        searchResult: SearchResult
+        searchResult: SearchResult,
+        userSetting: UserSettings
     },
     {
         initialRouteName: 'Home',
