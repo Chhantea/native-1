@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88dad140-846e-4a5e-9c22-0e18eacd419f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/component/screens/searchResult/SearchResultIndex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/Search/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/Search/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/carousal/CarousalHeadder.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/shareComponent/carousal/CarousalHeadder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/carousal/SideScrollSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/shareComponent/carousal/SideScrollSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/shareComponent/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/searchHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/shareComponent/searchHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/sideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/sideBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/api_url.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/api_url.js" afterDir="false" />
-    </list>
+    <list default="true" id="88dad140-846e-4a5e-9c22-0e18eacd419f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -31,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/component/home/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="193">
-              <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
+              <caret line="60" column="82" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="82" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -259,16 +246,15 @@
       <workItem from="978307476599" duration="23995000" />
       <workItem from="1574919034138" duration="2510000" />
       <workItem from="1574925967721" duration="14861000" />
-      <workItem from="1574943962184" duration="6825000" />
+      <workItem from="1574943962184" duration="7090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63594000" />
+    <option name="totallyTimeSpent" value="63859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13322802" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -719,7 +705,7 @@
     <entry file="file://$PROJECT_DIR$/component/home/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
-          <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
+          <caret line="60" column="82" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="82" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
