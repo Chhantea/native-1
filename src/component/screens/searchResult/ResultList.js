@@ -2,14 +2,17 @@ import React,{Component} from 'react';
 import {View,Text,Image,StyleSheet,TouchableOpacity,ActivityIndicator} from 'react-native';
 
 export default class ResultList extends Component{
-
     _onHandleTouch=(e)=>{
         e.preventDefault();
       alert("this is test touch")
     };
     render() {
         return (
-            <TouchableOpacity onPress={this._onHandleTouch}>
+            <TouchableOpacity onPress={()=>{
+                this.props.nav.navigate('productScreen', {
+                    itemId: '5de25291a15e170e47c2dc8c',
+                });
+            }}>
             <View style={styles.contRow}>
                 <View>
                     <Image

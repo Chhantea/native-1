@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import {StyleSheet,Text,View,Button,TouchableOpacity,Image} from 'react-native';
-import Header from '.././shareComponent/header';
+import Header from '../shareComponent/header';
 import axios from 'axios';
 import Url from '../../config/api_url'
 

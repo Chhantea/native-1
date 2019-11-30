@@ -31,11 +31,24 @@ export default class SearchResultIndex extends Component{
                     </View>
                 </View>
                 <View style={styles.nativeHr}/>
-                <ResultList/>
-                <ResultList/>
-                <ResultList/>
-                <ResultList/>
-                <ResultList/>
+                <ResultList
+                nav={this.props.navigation}
+                />
+                <ResultList
+                    nav={this.props.navigation}
+                />
+                <ResultList
+                    nav={this.props.navigation}
+                />
+                <ResultList
+                    nav={this.props.navigation}
+                />
+                <ResultList
+                    nav={this.props.navigation}
+                />
+                <ResultList
+                    nav={this.props.navigation}
+                />
             </ScrollView>
         );
     }

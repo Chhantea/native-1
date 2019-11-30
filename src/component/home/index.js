@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import {StyleSheet,Text,View,Button,ScrollView,Picker,TouchableOpacity,Image} from 'react-native';
-import  Header from '.././shareComponent/header';
+import  Header from '../shareComponent/header';
 import CarousalHeadder from "../shareComponent/carousal/CarousalHeadder";
 import GetLocation from "../shareComponent/GetLocation";
 import SideScrollSection from "../shareComponent/carousal/SideScrollSection";

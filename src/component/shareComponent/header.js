@@ -32,8 +32,8 @@ export default class Header extends Component{
                             <View style={style.title}>
                                 <TouchableOpacity onPress={() => this.props.nav.navigate('Home')}>
                                     <Image
-                                        source={require('./../../assets/White.png')}
-                                        style={{ width: 40, height: 40}}
+                                        source={require('../../assets/White.png')}
+                                        style={{ width: 50, height: 50}}
                                     />
                                 </TouchableOpacity>
                             </View>
@@ -59,7 +59,7 @@ export default class Header extends Component{
                     {/*</View>*/}
                     <View style={style.searchSection}>
                         <TouchableOpacity onPress={this._onPressButton} style={style.sideTouchable}>
-                        <Ionicons style={style.searchIcon} name="md-search" size={30} color="black" />
+                        <Ionicons style={style.searchIcon} name="md-search" size={30} color="white" />
                         </TouchableOpacity>
                         <TextInput
                             style=
@@ -176,7 +176,7 @@ const style = StyleSheet.create({
         borderLeftColor:'black',
         borderBottomRightRadius:5,
         borderTopRightRadius:5,
-        backgroundColor: 'orange',paddingLeft: 5,paddingRight: 5
+        backgroundColor: '#ff4444',paddingLeft: 5,paddingRight: 5
     },
     f1center: {
         flex: 1,

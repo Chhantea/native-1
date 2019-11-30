@@ -12,9 +12,9 @@
     ],
     "version": "1.0.2",
     "orientation": "portrait",
-    "icon": "./assets/brand1.png",
+    "icon": "./src/assets/brand1.png",
     "splash": {
-      "image": "./assets/Coloured.png",
+      "image": "./src/assets/Coloured.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -28,7 +28,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.aawbInternetLtd.aawbapp"
+      "package": "com.aawbInternetPvtLtd.aawbSpot"
     }
   }
 }

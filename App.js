@@ -1,16 +1,17 @@
 import {createAppContainer} from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import {createDrawerNavigator} from 'react-navigation-drawer';
-import HomeScreen from './component/home/index' ;
-import Another from './component/home/Another' ;
-import ModalScreen from './component/shareComponent/modal/ModalScreen';
+import HomeScreen from './src/component/home/index' ;
+import Another from './src/component/home/Another' ;
+import ModalScreen from './src/component/shareComponent/modal/ModalScreen';
 import { Ionicons } from '@expo/vector-icons';
-import Sidebar from './component/sideBar';
-import Search from './component/Search/index';
-import Menu from './component/Menu';
-import Cart from './component/screens/cart/Index';
-import SearchResult from "./component/screens/searchResult/SearchResultIndex";
-import UserSettings from "./component/screens/user/UserSettings";
+import Sidebar from './src/component/sideBar';
+import Search from './src/component/Search/index';
+import Menu from './src/component/Menu';
+import Cart from './src/component/screens/cart/Index';
+import SearchResult from "./src/component/screens/searchResult/SearchResultIndex";
+import UserSettings from "./src/component/screens/user/UserSettings";
+import ProductIndex from "./src/component/screens/product/ProductIndex";
 const MainNavigator = createStackNavigator(
     {
         Home: HomeScreen,
@@ -18,7 +19,8 @@ const MainNavigator = createStackNavigator(
         Cart: Cart,
         search: Search,
         searchResult: SearchResult,
-        userSetting: UserSettings
+        userSetting: UserSettings,
+        productScreen:ProductIndex
     },
     {
         initialRouteName: 'Home',
