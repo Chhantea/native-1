@@ -36,6 +36,7 @@ export default class ProductIndex extends Component{
             this.setState({images:res.data.images,item_data:res.data,load:false})
         }).catch(error=>{
             console.log(error.response);
+            alert("Something error with Server")
         })
 
     }
@@ -43,7 +44,8 @@ export default class ProductIndex extends Component{
       if(this.state.item_data.format1=="Fixed" && this.state.item_data.variation == false){
           return(
               <View style={styles.priceContent}>
-                  <Text>Price <Text style={{fontSize:25,color:'red'}}>{this.state.item_data.price1}</Text></Text>
+                  <Text>Price
+                      <Text style={{fontSize:25,color:'red'}}>{this.state.item_data.price1}</Text></Text>
                   <Text>Quantity</Text>
               </View>
           )

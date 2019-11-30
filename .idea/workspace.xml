@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88dad140-846e-4a5e-9c22-0e18eacd419f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/AAWB.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/AAWB.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Coloured.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Coloured.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/White.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/White.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/brand1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/brand1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/splash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/Credential/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Credential/signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/Search/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Search/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/home/Another.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/Another.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/screens/cart/CartList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/screens/cart/CartList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/screens/cart/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/screens/cart/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/screens/cart/TotalSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/screens/cart/TotalSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/screens/searchResult/ResultList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/screens/searchResult/ResultList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/screens/searchResult/SearchResultIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/screens/searchResult/SearchResultIndex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/screens/user/UserSettings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/screens/user/UserSettings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/GetLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/shareComponent/GetLocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/NavButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/shareComponent/NavButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/Users/UserAvatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/shareComponent/Users/UserAvatar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/White.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/shareComponent/White.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/carousal/CarousalHeadder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/shareComponent/carousal/CarousalHeadder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/carousal/CarousalSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/shareComponent/carousal/CarousalSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/carousal/SideScrollSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/shareComponent/carousal/SideScrollSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/headder2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/shareComponent/headder2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/shareComponent/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/modal/ModalScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/shareComponent/modal/ModalScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/shareComponent/searchHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/shareComponent/searchHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/sideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/sideBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/api_url.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/api_url.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/screens/product/ProductIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/screens/product/ProductIndex.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/helper/CookieManagement.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="47" lean-forward="true" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -98,8 +64,8 @@
       <file leaf-file-name="headder2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/shareComponent/headder2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+            <state relative-caret-position="1020">
+              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -110,20 +76,8 @@
       <file leaf-file-name="ProductIndex.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/screens/product/ProductIndex.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="77" column="57" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/screens/cart/Index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="49" />
+            <state relative-caret-position="-98">
+              <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -134,7 +88,7 @@
       <file leaf-file-name="Slider.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/component/screens/product/slider/Slider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="15">
               <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -147,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/component/shareComponent/carousal/CarousalHeadder.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="326">
-              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -385,18 +339,18 @@
       <workItem from="1574925967721" duration="14861000" />
       <workItem from="1574943962184" duration="7090000" />
       <workItem from="1575004965498" duration="20921000" />
-      <workItem from="1575093331157" duration="18079000" />
+      <workItem from="1575093331157" duration="19136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102859000" />
+    <option name="totallyTimeSpent" value="103916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13322802" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13322802" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -404,7 +358,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32935324" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.38706467" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.38706467" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -732,16 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/helper/CookieManagement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="47" lean-forward="true" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/helper/storage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -752,7 +696,7 @@
     <entry file="file://$PROJECT_DIR$/src/component/shareComponent/carousal/CarousalHeadder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -799,6 +743,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/helper/CookieManagement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/shareComponent/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -811,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/shareComponent/headder2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        <state relative-caret-position="1020">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -821,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/screens/cart/Index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="49" />
+        <state relative-caret-position="435">
+          <caret line="29" column="49" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="49" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -831,8 +785,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/screens/product/ProductIndex.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="77" column="57" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="57" />
+        <state relative-caret-position="-98">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -841,7 +795,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/screens/product/slider/Slider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="15">
           <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
