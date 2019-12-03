@@ -4,7 +4,6 @@ import {createDrawerNavigator} from 'react-navigation-drawer';
 import HomeScreen from './src/component/home/index' ;
 import Another from './src/component/home/Another' ;
 import ModalScreen from './src/component/shareComponent/modal/ModalScreen';
-import { Ionicons } from '@expo/vector-icons';
 import Sidebar from './src/component/sideBar';
 import Search from './src/component/Search/index';
 import Menu from './src/component/Menu';
@@ -12,6 +11,7 @@ import Cart from './src/component/screens/cart/Index';
 import SearchResult from "./src/component/screens/searchResult/SearchResultIndex";
 import UserSettings from "./src/component/screens/user/UserSettings";
 import ProductIndex from "./src/component/screens/product/ProductIndex";
+import FilterScreen from "./src/component/screens/searchResult/filter/FilterScreen";
 const MainNavigator = createStackNavigator(
     {
         Home: HomeScreen,
@@ -20,7 +20,8 @@ const MainNavigator = createStackNavigator(
         search: Search,
         searchResult: SearchResult,
         userSetting: UserSettings,
-        productScreen:ProductIndex
+        productScreen:ProductIndex,
+        searchFilter: FilterScreen
     },
     {
         initialRouteName: 'Home',

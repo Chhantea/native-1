@@ -1,33 +1,99 @@
 import React,{Component} from 'react';
 import {View,Text,Image,StyleSheet,TouchableOpacity,ActivityIndicator} from 'react-native';
+import Url from '../../../config/api_url';
 
 export default class ResultList extends Component{
-    _onHandleTouch=(e)=>{
-        e.preventDefault();
-      alert("this is test touch")
+    renderViewFormat1(){
+        var minPrice = this.props.passData.minprice;
+        var format = this.props.passData.format1;
+        if(format=="Fixed"){
+            if(typeof minPrice =="undefined"){
+                return ( <View >
+                    <Text  style={styles.priceText}>
+                        {this.props.passData.price1.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                        </Text>
+                </View>)
+            }else {
+                return (<View >
+                    <Text  style={styles.priceText}>
+                    {this.props.passData.minprice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} - {this.props.passData.maxprice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                    </Text>
+                </View>)
+            }
+        }
+        if(format=="Negotiation"){
+            return(<Text style={styles.priceText}>Negotiable</Text>)
+        }
+        if(format=="Auction"){
+            return (
+                <View>
+                    <Text style={styles.priceText}>
+                        {this.props.passData.price1.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                        </Text>
+                    <Text >0 Bid(s)</Text>
+                </View>
+           )
+        }
+    };
+    renderViewFormat2(){
+        var minPrice = this.props.passData.minprice;
+        var format = this.props.passData.format2;
+        if(format=="Fixed"){
+            if(typeof minPrice =="undefined"){
+                return (
+                    <View >
+                        <Text style={styles.priceText}>{this.props.passData.price2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Text>
+                    </View>)
+            }else {
+                return (
+                    <View >
+                        <Text style={styles.priceText}>
+                         {this.props.passData.minprice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} - {this.props.passData.maxprice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                        </Text>
+                </View>)
+            }
+        }
+        if(format=="Negotiation"){
+            return(<View>
+                  <Text>or</Text>
+                  <Text style={styles.priceText} >Negotiable</Text>
+                </View>)
+        }
+        if(format=="Auction"){
+            return (
+                     <View>
+                            <Text style={styles.priceText}>
+                             {this.props.passData.price2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                             </Text>
+                         <Text >0 Bid(s)</Text>
+                     </View>
+           )
+        }
     };
     render() {
         return (
             <TouchableOpacity onPress={()=>{
                 this.props.nav.navigate('productScreen', {
-                    itemId: '5de25291a15e170e47c2dc8c',
+                    itemId: this.props.passData.itemid,
                 });
             }}>
             <View style={styles.contRow}>
-                <View>
+                <View style={{padding:5}}>
                     <Image
                         style={styles.image}
-                        source={{uri:'https://i.ebayimg.com/images/g/j7wAAOSwOGFc0e~W/s-l640.jpg'}}
-                        PlaceholderContent={<ActivityIndicator />}
+                        resizeMode = 'contain'
+                        source={{uri:Url+'/'+this.props.passData.image}}
+                        // PlaceholderContent={<ActivityIndicator />}
                     />
                 </View>
                     <View style={styles.itemTitle}>
-                        <Text>HP 14-Inch Laptop Computer, 4GB RAM, 500GB Hard Drive, 14-cm0020nr - Black</Text>
-                        <Text style={{fontSize:9}}>by Elon</Text>
+                        <Text>{this.props.passData.title}</Text>
+                        <Text style={{fontSize:9}}>by {this.props.passData.seller}</Text>
                         <View>
                             <Text style={{fontSize:12}}>* * * * * 123</Text>
                         </View>
-                        <Text style={styles.priceText}> 12345</Text>
+                        {this.renderViewFormat1()}
+                        {this.renderViewFormat2()}
                     </View>
             </View>
                 <View style={styles.nativeHr}/>

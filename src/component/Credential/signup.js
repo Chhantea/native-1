@@ -26,7 +26,7 @@ export default class SignUp extends React.Component {
         axios.post(Url+"/api/login",json_data, {withCredentials: true}).then(res=>{
             console.log(res);
             console.log("asdsadsad===>",res.headers['set-cookie']);
-            deviceStorage.setCookie("session", res.headers['set-cookie']);
+            deviceStorage.setCookie("session", res.headers['set-cookie'].toString());
         }).catch(err=>{
             console.log(err.response);
         });
@@ -49,6 +49,16 @@ export default class SignUp extends React.Component {
            console.log("logout",res);
        })
    };
+
+  async checkAnother(){
+      console.log('this is check another');
+       axios.get(Url+'/api/sold',{withCredentials:true}).then(res=>{
+           console.log(res.data);
+       }).catch(err=>{
+           console.log(err.response)
+       })
+
+   }
 
     render() {
         return (
@@ -97,6 +107,13 @@ export default class SignUp extends React.Component {
                         <Button
                             onPress={this.checkLogout}
                             title="logout"
+
+                        />
+                    </View>
+                    <View style={{marginTop:10}}>
+                        <Button
+                            onPress={this.checkAnother}
+                            title="Check another"
 
                         />
                     </View>
